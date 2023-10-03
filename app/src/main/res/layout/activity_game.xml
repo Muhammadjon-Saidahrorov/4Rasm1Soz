@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B2545"
+    android:orientation="vertical"
+    tools:context=".ui.game.GameActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iconBackId"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="26dp"
+            android:layout_gravity="start"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:src="@drawable/arrow_back"/>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icons" />
+
+
+            <TextView
+                android:id="@+id/coinId"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#FAB005"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:text="1" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iconAnswerId"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="26dp"
+            android:layout_gravity="end"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_icons8_idea"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginVertical="4dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginEnd="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pic1_1" />
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pic1_2" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_marginVertical="4dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginEnd="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pic1_3" />
+
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pic1_4" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/answers"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/answer_glow"
+        android:gravity="center">
+
+        <TextView
+            style="@style/tvStyle.tvAnswersStyle"
+            tools:text="A" />
+
+        <TextView
+            style="@style/tvStyle.tvAnswersStyle"
+            tools:text="B" />
+
+        <TextView
+            style="@style/tvStyle.tvAnswersStyle"
+            tools:text="C" />
+
+        <TextView
+            style="@style/tvStyle.tvAnswersStyle"
+            tools:text="D" />
+
+        <TextView
+            style="@style/tvStyle.tvAnswersStyle"
+            tools:text="E" />
+
+        <TextView
+            style="@style/tvStyle.tvAnswersStyle"
+            tools:text="F" />
+
+        <TextView
+            style="@style/tvStyle.tvAnswersStyle"
+            tools:text="G" />
+
+        <TextView
+            style="@style/tvStyle.tvAnswersStyle"
+            android:layout_marginEnd="0dp"
+            tools:text="H" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:id="@+id/variants"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/variant1"
+            style="@style/tvStyle"
+            tools:text="B" />
+
+        <TextView
+            android:id="@+id/variant2"
+            style="@style/tvStyle"
+            android:layout_toEndOf="@id/variant1" />
+
+        <TextView
+            android:id="@+id/variant3"
+            style="@style/tvStyle"
+            android:layout_toEndOf="@id/variant2" />
+
+        <TextView
+            android:id="@+id/variant4"
+            style="@style/tvStyle"
+            android:layout_toEndOf="@id/variant3" />
+
+        <TextView
+            android:id="@+id/variant5"
+            style="@style/tvStyle"
+            android:layout_toEndOf="@id/variant4" />
+
+        <TextView
+            android:id="@+id/variant6"
+            style="@style/tvStyle"
+            android:layout_toEndOf="@id/variant5" />
+
+        <TextView
+            android:id="@+id/variant7"
+            style="@style/tvStyle"
+            android:layout_marginEnd="0dp"
+            android:layout_toEndOf="@id/variant6" />
+
+
+        <TextView
+            android:id="@+id/variant8"
+            style="@style/tvStyle"
+            android:layout_below="@id/variant1" />
+
+        <TextView
+            android:id="@+id/variant9"
+            style="@style/tvStyle"
+            android:layout_below="@id/variant1"
+            android:layout_toEndOf="@id/variant1" />
+
+        <TextView
+            android:id="@+id/variant10"
+            style="@style/tvStyle"
+            android:layout_below="@id/variant1"
+            android:layout_toEndOf="@id/variant2" />
+
+        <TextView
+            android:id="@+id/variant11"
+            style="@style/tvStyle"
+            android:layout_below="@id/variant1"
+            android:layout_toEndOf="@id/variant3" />
+
+        <TextView
+            android:id="@+id/variant12"
+            style="@style/tvStyle"
+            android:layout_below="@id/variant1"
+            android:layout_toEndOf="@id/variant4" />
+
+        <TextView
+            android:id="@+id/variant13"
+            style="@style/tvStyle"
+            android:layout_below="@id/variant1"
+            android:layout_toEndOf="@id/variant5" />
+
+        <TextView
+            android:id="@+id/variant14"
+            style="@style/tvStyle"
+            android:layout_below="@id/variant1"
+            android:layout_marginEnd="0dp"
+            android:layout_toEndOf="@id/variant6" />
+
+    </RelativeLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+</LinearLayout>
